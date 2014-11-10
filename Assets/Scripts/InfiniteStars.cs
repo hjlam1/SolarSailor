@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InfiniteStars : MonoBehaviour {
+public class infiniteStars : MonoBehaviour {
 
 	public int starsMax = 100;
 	public float starSize = 1.0f;
@@ -22,7 +22,7 @@ public class InfiniteStars : MonoBehaviour {
 		starClipDistanceSqr = starClipDistance * starClipDistance;
 	}
 
-	private void  CreateStars() {
+	private void createStars() {
 		points = new ParticleSystem.Particle[starsMax];
 		for (int i = 0; i<starsMax; i++) {
 			points[i].position = Random.insideUnitSphere.normalized * starDistance + tx.position;
@@ -33,7 +33,7 @@ public class InfiniteStars : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (points==null) CreateStars();
+		if (points==null) createStars();
 		for (int i=0; i<starsMax; i++) {
 			if ((points[i].position - tx.position).sqrMagnitude > starDistanceSqr) {
 				points[i].position = Random.insideUnitSphere * starDistance + tx.position;

@@ -1,0 +1,22 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x126)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.148 seconds
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,-312
+<RI> Initializing input.
+<RI> Input initialized.

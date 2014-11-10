@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FlyCam : MonoBehaviour {
+public class flyCam : MonoBehaviour {
 	
 	
 	public float speed = 50.0f;		// max speed of camera
@@ -9,7 +9,7 @@ public class FlyCam : MonoBehaviour {
 	public bool inverted = false;
 	
 	
-	private Vector3 lastMouse = new Vector3(255, 255, 255);
+	private Vector3 lastMouse = new Vector3(0, 0, 0);
 	
 	
 	// smoothing
@@ -34,7 +34,8 @@ public class FlyCam : MonoBehaviour {
 		lastMouse = Input.mousePosition - lastMouse;
 		if ( ! inverted ) lastMouse.y = -lastMouse.y;
 		lastMouse *= sensitivity;
-		lastMouse = new Vector3( transform.eulerAngles.x + lastMouse.y, transform.eulerAngles.y + lastMouse.x, 0);
+		//lastMouse = new Vector3( transform.eulerAngles.x + lastMouse.y, transform.eulerAngles.y + lastMouse.x, 0);
+		lastMouse = new Vector3( transform.eulerAngles.x, transform.eulerAngles.y + lastMouse.x, 0);
 		transform.eulerAngles = lastMouse;
 		lastMouse = Input.mousePosition;
 		
@@ -82,6 +83,7 @@ public class FlyCam : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		//GUILayout.Box ("actSpeed: " + actSpeed.ToString());
+		GUILayout.Box ("actSpeed: " + actSpeed.ToString());
+		GUILayout.Box ("xRot: " + transform.eulerAngles.x);
 	}
 }
