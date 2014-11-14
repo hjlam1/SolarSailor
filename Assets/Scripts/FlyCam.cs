@@ -54,6 +54,9 @@ public class flyCam : MonoBehaviour {
 		
 		// Change forward movement from key input to collider trigger
 		if (Input.GetKey(KeyCode.W)) dir.z += 1.0f;
+		//if (Input.GetKey(KeyCode.W)) {
+		//	transform.Translate (Vector3.forward * Time.deltaTime * speed);
+		//}
 		//if (Input.GetKey(KeyCode.S)) dir.z -= 1.0f;
 		//if (Input.GetKey(KeyCode.A)) dir.x -= 1.0f;
 		//if (Input.GetKey(KeyCode.D)) dir.x += 1.0f;
@@ -89,7 +92,7 @@ public class flyCam : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		GUILayout.Box ("actSpeed: " + actSpeed.ToString());
-		GUILayout.Box ("xRot: " + transform.eulerAngles.x);
+		//GUILayout.Box ("actSpeed: " + actSpeed.ToString());
+		//GUILayout.Box ("xRot: " + transform.eulerAngles.x);
 	}
 }
