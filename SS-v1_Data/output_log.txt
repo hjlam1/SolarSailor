@@ -16,7 +16,7 @@ Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\s
 Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.148 seconds
+- Completed reload, in  0.305 seconds
 desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,-312
 <RI> Initializing input.
 <RI> Input initialized.
