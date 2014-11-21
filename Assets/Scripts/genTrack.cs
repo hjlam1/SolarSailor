@@ -5,9 +5,10 @@ public class genTrack : MonoBehaviour {
 
 	public GameObject track;
 	public Transform startPosition;
-	private Quaternion rotation;
 	public float heightOffset = -1f;
 	public float widthOffset = 16f;
+
+	private Quaternion rotation;
 
 	void Start () {
 
@@ -19,7 +20,7 @@ public class genTrack : MonoBehaviour {
 	}
 	
 	IEnumerator trackGeneration() {
-		for (int i = 0; i < 60; i++) {
+		for (int i = 0; i < 100; i++) {
 			layTrack();
 			yield return new WaitForSeconds(0.8f);
 		}

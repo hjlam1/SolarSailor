@@ -7,8 +7,8 @@ public class flyCam : MonoBehaviour {
 	public float speed = 50.0f;		// max speed of camera
 	public float sensitivity = 0.25f; 		// keep it from 0..1
 	public bool inverted = false;
-	public float rotationSpeed = 100.0F;
-	public float horizontalSpeed = 2.0F;
+	public float rotationSpeed = 100.0f;
+	public float horizontalSpeed = 2.0f;
 	
 	private Vector3 lastMouse = new Vector3(0, 0, 0);
 	
@@ -43,9 +43,9 @@ public class flyCam : MonoBehaviour {
 		
 		
 		float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
-		transform.Rotate(0, rotation, 0);
+		this.transform.Rotate(0, rotation, 0);
 
-		float h = horizontalSpeed * Input.GetAxis("Mouse Y");
+		float h = horizontalSpeed * Input.GetAxis("Mouse X");
 		transform.Rotate(0, h, 0);
 
 		// Movement of the camera
