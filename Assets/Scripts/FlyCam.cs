@@ -10,7 +10,7 @@ public class flyCam : MonoBehaviour {
 	public float rotationSpeed = 100.0f;
 	public float horizontalSpeed = 2.0f;
 	
-	private Vector3 lastMouse = new Vector3(0, 0, 0);
+	//private Vector3 lastMouse = new Vector3(0, 0, 0);
 	
 	
 	// smoothing
@@ -53,8 +53,9 @@ public class flyCam : MonoBehaviour {
 		Vector3 dir = new Vector3();			// create (0,0,0)
 		
 		// Change forward movement from key input to collider trigger
-		if (Input.GetKey(KeyCode.W)) dir.z += 1.0f;
+		//if (Input.GetKey(KeyCode.W)) dir.z += 1.0f;
 		//if (Input.GetKey(KeyCode.W)) {
+		dir.z += 1.0f;
 		//	transform.Translate (Vector3.forward * Time.deltaTime * speed);
 		//}
 		//if (Input.GetKey(KeyCode.S)) dir.z -= 1.0f;

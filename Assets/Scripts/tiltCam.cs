@@ -7,7 +7,7 @@ public class tiltCam : MonoBehaviour {
 	//public float mouseTiltFactor = 1.0f;
 	private float lastTilt = 0f;
 	private float tiltSpeed = 0.5f;
-	private Quaternion tilt = Quaternion.identity;
+	//private Quaternion tilt = Quaternion.identity;
 	// Use this for initialization
 	void Start () {
 	
@@ -27,7 +27,7 @@ public class tiltCam : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUILayout.Box ("zRot: " + transform.eulerAngles.z);
-		GUILayout.Box ("tilt: " + lastTilt);
+		//GUILayout.Box ("zRot: " + transform.eulerAngles.z);
+		//GUILayout.Box ("tilt: " + lastTilt);
 	}
 }
