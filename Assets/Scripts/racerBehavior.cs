@@ -32,9 +32,9 @@ public class racerBehavior : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUILayout.Box ("deltaAB: " + Vector3.Distance(hare.transform.position, this.transform.position));
-		GUILayout.Box ("deltaCB: " + Vector3.Distance(hare.transform.position, player.transform.position));
-		GUILayout.Box ("Rubberband: " + rubberBand);
-		GUILayout.Box ("Racer Speed: " + (Time.deltaTime+racerSpeed) * racerVariance * (rubberBand+boost));
+		//GUILayout.Box ("deltaAB: " + Vector3.Distance(hare.transform.position, this.transform.position));
+		//GUILayout.Box ("deltaCB: " + Vector3.Distance(hare.transform.position, player.transform.position));
+		//GUILayout.Box ("Rubberband: " + rubberBand);
+		//GUILayout.Box ("Racer Speed: " + (Time.deltaTime+racerSpeed) * racerVariance * (rubberBand+boost));
 	}
 }

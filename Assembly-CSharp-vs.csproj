@@ -46,13 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\boomTrigger.cs" />
      <Compile Include="Assets\Scripts\driveCam.cs" />
      <Compile Include="Assets\Scripts\flyCam.cs" />
      <Compile Include="Assets\Scripts\genTrack.cs" />
      <Compile Include="Assets\Scripts\infiniteStars.cs" />
+     <Compile Include="Assets\Scripts\offTrack.cs" />
      <Compile Include="Assets\Scripts\racerBehavior.cs" />
+     <Compile Include="Assets\Scripts\screenFade.cs" />
      <Compile Include="Assets\Scripts\tiltCam.cs" />
      <Compile Include="Assets\Scripts\trackBehavior.cs" />
+     <Compile Include="Assets\Scripts\trackThin.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />

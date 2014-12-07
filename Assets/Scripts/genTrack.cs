@@ -5,18 +5,22 @@ public class genTrack : MonoBehaviour {
 
 	public GameObject track;
 	public Transform startPosition;
-	public float heightOffset = -1f;
+	private float heightOffset = -5f;
 	public float widthOffset = 16f;
 	public GameObject[] tracks;
 	public int trackSegments = 15; // Length of moving track
 	private Quaternion rotation;
 	public int trackIndex = 0;
-	private float angleThreshold = 45f; // Maximum turn angle
-	public float pivotOffset = 45f;  //Distance from center of track to the pivot point of next track piece
-	private float angleRange = 20f;
+	private float angleThreshold; // Maximum turn angle
+	public float pivotOffset = 25f;  //Distance from center of track to the pivot point of next track piece
+	private float angleRange;
+	private float angleIncreaseStart = 60f; //Time when track turns start getting sharper
+	private float angleIncreaseStop = 120f;
+	private float angleDifficulty = 15.0f;
 
 	void Start () {
-
+		angleThreshold = 15f;
+		angleRange = 15f;
 		transform.Translate (new Vector3 (startPosition.position.x + widthOffset, startPosition.position.y + heightOffset, startPosition.position.z));
 		transform.localRotation = startPosition.localRotation;
 		Instantiate (track,transform.position,transform.localRotation);
@@ -40,6 +44,10 @@ public class genTrack : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			layTrack ();
+		}
+		if ((Time.timeSinceLevelLoad >= angleIncreaseStart) && (Time.timeSinceLevelLoad <= angleIncreaseStop)) {
+			angleThreshold = Time.timeSinceLevelLoad / (angleIncreaseStop - angleIncreaseStart) * angleDifficulty;
+			angleRange = angleThreshold;
 		}
 	}
 
@@ -79,5 +87,10 @@ public class genTrack : MonoBehaviour {
 
 	public Vector3 getTrackPosition (int segmentIndex) {
 		return tracks[segmentIndex].transform.position;
+	}
+
+	void OnGUI() {
+		GUILayout.Box ("Time: " + (int)Time.timeSinceLevelLoad);
+		//GUILayout.Box ("AngleThreshold: " + angleThreshold);
 	}
 }

@@ -5,6 +5,7 @@ public class trackBehavior : MonoBehaviour {
 
 	public genTrack hare;
 	private int trackMovementOffsetDelay;
+	public screenFade fader;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +17,10 @@ public class trackBehavior : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter () {
+	void OnTriggerEnter (Collider other) {
+		if (other.CompareTag ("Finish")) {
+			fader.EndScene ();
+		}
 		trackMovementOffsetDelay--;
 		if (trackMovementOffsetDelay < 0) {
 			hare.moveTrack (hare.trackIndex);
