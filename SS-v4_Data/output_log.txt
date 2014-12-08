@@ -1,0 +1,40 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x126)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Henry\Desktop\MFADT\2014 - Fall\Major Studio\Final\ss\SS-v4_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.084 seconds
+desktop: 1366x768 60Hz; virtual: 1680x1818 at -149,-1050
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 5.181700 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 222.
+Total: 0.877314 ms (FindLiveObjects: 0.025477 ms CreateObjectMapping: 0.014382 ms MarkObjects: 0.208336 ms  DeleteObjects: 0.007396 ms)
+
+UnloadTime: 0.511184 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 221.
+Total: 0.716644 ms (FindLiveObjects: 0.018491 ms CreateObjectMapping: 0.011505 ms MarkObjects: 0.140534 ms  DeleteObjects: 0.005752 ms)
+
+UnloadTime: 3.072859 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 223.
+Total: 1.050722 ms (FindLiveObjects: 0.012738 ms CreateObjectMapping: 0.009862 ms MarkObjects: 0.518991 ms  DeleteObjects: 0.004931 ms)
+

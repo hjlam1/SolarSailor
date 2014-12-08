@@ -9,7 +9,7 @@ public class trackBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		trackMovementOffsetDelay = 2;
+		trackMovementOffsetDelay = 0;
 	}
 	
 	// Update is called once per frame
@@ -21,11 +21,13 @@ public class trackBehavior : MonoBehaviour {
 		if (other.CompareTag ("Finish")) {
 			fader.EndScene ();
 		}
+
 		trackMovementOffsetDelay--;
 		if (trackMovementOffsetDelay < 0) {
 			hare.moveTrack (hare.trackIndex);
 			hare.incrementTrackIndex();
 			trackMovementOffsetDelay = 0;
 		}
+
 	}
 }

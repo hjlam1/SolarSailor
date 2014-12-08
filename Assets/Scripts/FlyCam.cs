@@ -11,7 +11,7 @@ public class flyCam : MonoBehaviour {
 	public float horizontalSpeed = 2.0f;
 	private float baseSpeed = 50.0f;
 	//private Vector3 lastMouse = new Vector3(0, 0, 0);
-	private int speedDifficultyInterval = 45;
+	private int speedDifficultyInterval = 30;
 	private float speedIncrement = 10.0f;
 	
 	// smoothing
@@ -30,8 +30,9 @@ public class flyCam : MonoBehaviour {
 	void Update () {
 
 		if (((int)Time.timeSinceLevelLoad % speedDifficultyInterval == 0) && ((int)Time.timeSinceLevelLoad != 0)) {
-			speed = baseSpeed + ((int)Time.timeSinceLevelLoad / speedDifficultyInterval) * speedIncrement;
 			audio.Play ();
+			speed = baseSpeed + ((int)Time.timeSinceLevelLoad / speedDifficultyInterval) * speedIncrement;
+
 		}
 		// No Y axis rotation
 		//if (Input.GetKeyDown(KeyCode.Y)) {
@@ -91,6 +92,7 @@ public class flyCam : MonoBehaviour {
 		
 		if (smooth) 
 			transform.Translate( lastDir * actSpeed * speed * Time.deltaTime );
+			//rigidbody.AddRelativeForce (Vector3.forward * speed);
 		
 		else 
 			transform.Translate ( dir * speed * Time.deltaTime );
