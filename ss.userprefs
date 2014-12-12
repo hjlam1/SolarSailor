@@ -1,15 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\trackBehavior.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\racerBehaviorB.cs">
     <Files>
-      <File FileName="Assets\Scripts\flyCam.cs" Line="14" Column="43" />
+      <File FileName="Assets\Scripts\racerBehavior.cs" Line="6" Column="23" />
+      <File FileName="Assets\Scripts\driveCam.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\flyCam.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\genTrack.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\tiltCam.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\racerBehavior.cs" Line="27" Column="60" />
-      <File FileName="Assets\Scripts\screenFade.cs" Line="76" Column="28" />
-      <File FileName="Assets\Scripts\trackBehavior.cs" Line="12" Column="31" />
+      <File FileName="Assets\Scripts\screenFade.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\trackBehavior.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\trackThin.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\boomTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\racerBehaviorB.cs" Line="16" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

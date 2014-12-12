@@ -4,15 +4,15 @@ using System.Collections;
 public class flyCam : MonoBehaviour {
 	
 	
-	private float speed;		// max speed of camera
+	public float speed;		// max speed of camera
 	public float sensitivity = 0.25f; 		// keep it from 0..1
 	public bool inverted = false;
 	public float rotationSpeed = 100.0f;
 	public float horizontalSpeed = 2.0f;
 	private float baseSpeed = 50.0f;
 	//private Vector3 lastMouse = new Vector3(0, 0, 0);
-	private int speedDifficultyInterval = 30;
-	private float speedIncrement = 10.0f;
+	private int speedDifficultyInterval = 20;
+	private float speedIncrement = 15.0f;
 	
 	// smoothing
 	public bool smooth = true;
@@ -27,7 +27,7 @@ public class flyCam : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		if (((int)Time.timeSinceLevelLoad % speedDifficultyInterval == 0) && ((int)Time.timeSinceLevelLoad != 0)) {
 			audio.Play ();
