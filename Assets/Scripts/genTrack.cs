@@ -43,7 +43,7 @@ public class genTrack : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			layTrack ();
+			//layTrack ();
 		}
 		if ((Time.timeSinceLevelLoad >= angleIncreaseStart) && (Time.timeSinceLevelLoad <= angleIncreaseStop)) {
 			angleThreshold = Time.timeSinceLevelLoad / (angleIncreaseStop - angleIncreaseStart) * angleDifficulty;
