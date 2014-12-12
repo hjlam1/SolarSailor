@@ -26,7 +26,7 @@ public class flyCam : MonoBehaviour {
 		speed = 50.0f;
 	}
 	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 
 		if (((int)Time.timeSinceLevelLoad % speedDifficultyInterval == 0) && ((int)Time.timeSinceLevelLoad != 0)) {
@@ -34,40 +34,15 @@ public class flyCam : MonoBehaviour {
 			speed = baseSpeed + ((int)Time.timeSinceLevelLoad / speedDifficultyInterval) * speedIncrement;
 
 		}
-		// No Y axis rotation
-		//if (Input.GetKeyDown(KeyCode.Y)) {
-		//	inverted = !inverted;
-		//}
-		
-		// Mouse Look
-		//lastMouse = Input.mousePosition - lastMouse;
-		//if ( ! inverted ) lastMouse.y = -lastMouse.y;
-		//lastMouse *= sensitivity;
-		////lastMouse = new Vector3( transform.eulerAngles.x + lastMouse.y, transform.eulerAngles.y + lastMouse.x, 0);
-		//lastMouse = new Vector3( transform.eulerAngles.x, transform.eulerAngles.y + lastMouse.x, 0);
-		//transform.eulerAngles = lastMouse;
-		//lastMouse = Input.mousePosition;
-		
-		
+
 		float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
 		this.transform.Rotate(0, rotation, 0);
 
 		float h = horizontalSpeed * Input.GetAxis("Mouse X");
 		transform.Rotate(0, h, 0);
-
-		// Movement of the camera
-		
-		Vector3 dir = new Vector3();			// create (0,0,0)
-		
-		// Change forward movement from key input to collider trigger
-		//if (Input.GetKey(KeyCode.W)) dir.z += 1.0f;
-		//if (Input.GetKey(KeyCode.W)) {
+		Vector3 dir = new Vector3();			
 		dir.z += 1.0f;
-		//	transform.Translate (Vector3.forward * Time.deltaTime * speed);
-		//}
-		//if (Input.GetKey(KeyCode.S)) dir.z -= 1.0f;
-		//if (Input.GetKey(KeyCode.A)) dir.x -= 1.0f;
-		//if (Input.GetKey(KeyCode.D)) dir.x += 1.0f;
+
 		dir.Normalize();
 		
 		
@@ -86,13 +61,9 @@ public class flyCam : MonoBehaviour {
 			else 
 				actSpeed = 0.0f;
 		}
-		
-		
-		
-		
 		if (smooth) 
 			transform.Translate( lastDir * actSpeed * speed * Time.deltaTime );
-			//rigidbody.AddRelativeForce (Vector3.forward * speed);
+			
 		
 		else 
 			transform.Translate ( dir * speed * Time.deltaTime );

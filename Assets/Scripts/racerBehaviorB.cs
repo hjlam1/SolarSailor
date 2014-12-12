@@ -19,16 +19,13 @@ public class racerBehaviorB : MonoBehaviour {
 	void Start () {
 		racerVariance = Random.Range (0.95f, 1.05f);
 		targetVariance = Random.Range (-1f, 1f);
-		//boost = 0.1f*Mathf.Sin (Time.timeSinceLevelLoad);
+
 	}
 	
 
 	void FixedUpdate () {
 		rubberBand = Vector3.Distance(hare.transform.position, this.transform.position) / Vector3.Distance(hare.transform.position, player.transform.position);	
-		//float theSpeed = (Time.deltaTime) * racerVariance * (rubberBand + boost);
 		float theSpeed = racerVariance * (rubberBand + (Mathf.Cos (Time.timeSinceLevelLoad * 2.5f) * boost));
-		//transform.position = Vector3.Slerp (transform.position, new Vector3(hare.getTrackPosition(targetPiece).x + targetVariance, hare.getTrackPosition(targetPiece).y, hare.getTrackPosition(targetPiece).z), theSpeed );
-		//rigidbody.AddRelativeForce(Vector3.forward * theSpeed * 200f);
 		Vector3 thePlace = new Vector3(hare.getTrackPosition(targetPiece).x + targetVariance, hare.getTrackPosition(targetPiece).y + zHeightOffset, hare.getTrackPosition(targetPiece).z);
 		Vector3 inBetween = Vector3.Slerp (new Vector3(transform.position.x, transform.position.y, transform.position.z+0.75f), thePlace, Time.deltaTime);
 		transform.LookAt (inBetween);
@@ -40,7 +37,6 @@ public class racerBehaviorB : MonoBehaviour {
 		transform.Translate (movement);
 		if (Vector3.Distance (transform.position, thePlace) < targetingThreshold) {
 			targetPiece++;
-			//targetVariance = Random.Range (-20f, 20f);
 			if (targetPiece == hare.trackSegments) {
 				targetPiece = 0;
 			}

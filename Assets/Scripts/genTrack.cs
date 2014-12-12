@@ -25,12 +25,12 @@ public class genTrack : MonoBehaviour {
 		transform.localRotation = startPosition.localRotation;
 		Instantiate (track,transform.position,transform.localRotation);
 		rotation = startPosition.localRotation;
-		//StartCoroutine(trackGeneration ());
+
 		for (int i = 0; i < trackSegments-2; i++) {
 			layTrack();
 		}
 		tracks = GameObject.FindGameObjectsWithTag("Respawn");
-		//StartCoroutine(trackGeneration());
+
 	}
 
 	IEnumerator trackGeneration() {
